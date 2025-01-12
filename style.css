@@ -1,0 +1,225 @@
+.navbar {
+    background-color: #ff0166;
+  }
+  .footer {
+    background-color: #ff0166;
+  }
+  .btn {
+    background-color: #ff0166;
+  }
+  .jumbotron {
+      padding-top: 6rem;
+      background-color: #f57ba0;
+    }
+    
+    #projects {
+      background-color: #f57ba0;
+    }
+    
+    section {
+      padding-top: 5rem;
+    }
+    
+    .gallery-img {
+      width: 100%;
+    }
+    
+    #galeri .row > * {
+      padding: 0;
+    }
+    
+    #skils {
+      background-color: #f57ba0;
+    }
+    
+    /* Produk Section */
+    .produk-box {
+      position: relative;
+      background-color: #ff0166;
+      border-radius: 10px;
+      height: 500px;
+      transform-style: preserve-3d;
+      overflow: hidden;
+    }
+    
+    .produk-box::before {
+      content: "PRODUCT";
+      position: absolute;
+      color: #fff;
+      font-size: 2em;
+      font-weight: bold;
+      font-style: italic;
+      top: 100px;
+      left: 15%;
+      transform: translate(-50%, 0) rotate(2deg);
+      opacity: 0;
+      transition: 0.5s;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+    }
+    
+    .produk-box:hover::before {
+      opacity: 0.4;
+    }
+    
+    .produk-box::after {
+      content: "PRODUCT";
+      position: absolute;
+      color: #fff;
+      font-size: 2em;
+      font-weight: bold;
+      font-style: italic;
+      top: 100px;
+      left: 85%;
+      transform: translate(-50%, 0);
+      opacity: 0;
+      transition: 0.5s;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      opacity: 0;
+    }
+    
+    .produk-box:hover::after {
+      opacity: 0.4;
+      transform: translate(-50%, 0) rotate(2deg);
+    }
+    
+    .produk1 {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      font-size: 1.5em;
+      opacity: 0;
+      transition: 0.5s;
+    }
+    
+    .produk-box:hover .produk1 {
+      top: 20px;
+      opacity: 1;
+    }
+    
+    .produk-detail-button {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      opacity: 0;
+      transition: 0.5s;
+    }
+    
+    .produk-box:hover .produk-detail-button {
+      opacity: 1;
+      bottom: 20px;
+    }
+    
+    .produk-login1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 100px) rotate(10deg) scale(1.5);
+      max-width: 350px;
+      transition: 0.5s;
+    }
+    
+    .produk-box:hover .produk-login1 {
+      transform: translate(-50%, -52%) rotate(0deg) scale(1.8);
+    }
+    
+    @media (max-width: 767px) {
+      .carousel-inner .carousel-item > div {
+        display: none;
+      }
+      .carousel-inner .carousel-item > div:first-child {
+        display: block;
+      }
+      .skill-font {
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+    
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      display: flex;
+    }
+    
+    /* medium and up screens */
+    @media (min-width: 768px) {
+      .carousel-inner .carousel-item-end.active,
+      .carousel-inner .carousel-item-next {
+        transform: translateX(30%);
+        transition: 0.5s;
+      }
+    
+      .carousel-inner .carousel-item-start.active,
+      .carousel-inner .carousel-item-prev {
+        transform: translateX(-30%);
+        transition: 0.5s;
+      }
+    }
+    
+    .carousel-inner .carousel-item-end,
+    .carousel-inner .carousel-item-start {
+      transform: translateX(0);
+      transition: 0.5s;
+    }
+    
+    /* css skill */
+    @media (min-width: 767px) {
+      .skill-font {
+        position: absolute;
+        font-weight: bold;
+        font-style: italic;
+        top: 35%;
+        left: 50%;
+        max-width: 100%;
+        height: auto;
+        font-size: 15px;
+      }
+    }
+    
+    @media (max-width: 767px) {
+      .skill-font {
+        font-weight: bold;
+        font-style: italic;
+        font-size: 10px;
+      }
+    }
+    
+    .imgskill {
+      max-width: 50px;
+      height: auto;
+    }
+    
+    @media (max-width: 992px) {
+      .skill-font {
+        max-width: 100%;
+        height: auto;
+        font-size: 10px;
+      }
+    }
+    
+    /* Shadow pada card di bagian skill */
+    
+    .skill-hover {
+      box-shadow: 3px 3px 3px rgb(255, 173, 254);
+    }
+    
+    .skill-hover:hover {
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+    
+    .ikon1 {
+      margin: 5px;
+      opacity: 0.6;
+      transition: opacity 1s;
+    }
+    
+    .ikon1:hover {
+      opacity: 1;
+    }
+    
